@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
-  before_action :set_tweet, only: [:edit, :show]
-  before_action :move_to_index, except: [:index, :show, :search]
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :set_tweet, only: [:edit, :update, :destroy, :show]
+before_action :move_to_index, except: [:index, :show, :search, :destroy, :update, :create, :new]
+  before_action :authenticate_user!, only: [ :create, :edit, :update, :destroy]
   def index
     @tweets = Tweet.all
   end
@@ -20,15 +20,13 @@ class TweetsController < ApplicationController
   end
 
   def destroy
-    tweet = Tweet.find(params[:id])
-    return unless tweet.user != current_user || tweet.record.present?
-    tweet.destroy
-    redirect_to root_path
+    @tweet = Tweet.find(params[:id])
+    @tweet.destroy
+    redirect_to tweets_path
   end
 
   def edit
-    return unless @tweet.user != current_user || @tweet.record.present?
-    redirect_to root_path
+ 
   end
 
   def update
@@ -61,9 +59,8 @@ class TweetsController < ApplicationController
     end
   end
 
-
   def move_to_index
-    unless user_signed_in?
+    unless user_signed_in? && current_user.id == @tweet.user_id
       redirect_to action: :index
     end
   end
