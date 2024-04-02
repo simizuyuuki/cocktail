@@ -1,22 +1,12 @@
 <div class="contents row">
   <div class="container">
-    <h3>投稿する</h3>
+    <h3>編集する</h3>
     <%= form_with(model: @tweet, local: true) do |form| %>
       <%= form.text_field :name, placeholder: "タイトル" %>
-      <%= form.file_field :image %>
+      <%= form.text_field :image %>
       <%= form.text_area :recipe,placeholder: "レシピ" %>
       <%= form.text_area :text, placeholder: "補足", rows: "10" %>
       <%= form.submit "SEND" %>
     <% end %>
-    <% if @tweet.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@tweet.errors.count, "error") %> prohibited this tweet from being saved:</h2>
-    <ul>
-    <% @tweet.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-    </ul>
-  </div>
-<% end %>
   </div>
 </div>
