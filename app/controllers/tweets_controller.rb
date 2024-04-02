@@ -1,6 +1,7 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: [:edit, :show]
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   def index
     @tweets = Tweet.all
   end
@@ -20,12 +21,14 @@ class TweetsController < ApplicationController
 
   def destroy
     tweet = Tweet.find(params[:id])
+    return unless tweet.user != current_user || tweet.record.present?
     tweet.destroy
     redirect_to root_path
   end
 
   def edit
-    
+    return unless @tweet.user != current_user || @tweet.record.present?
+    redirect_to root_path
   end
 
   def update
@@ -35,9 +38,13 @@ class TweetsController < ApplicationController
   end
 
   def show
-    
+    @comment = Comment.new
+    @comments = @tweet.comments.includes(:user) 
   end
 
+  def search
+    @tweets = Tweet.search(params[:keyword])
+  end
 
   private
   def tweet_params
@@ -48,7 +55,11 @@ class TweetsController < ApplicationController
     @tweet = Tweet.find(params[:id])
   end
 
-  
+  def check_owner
+    unless @tweet.user == current_user
+      redirect_to root_path, alert: "You are not authorized for this action."
+    end
+  end
 
 
   def move_to_index
