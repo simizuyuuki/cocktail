@@ -959,7 +959,7 @@ div.contents.row div.content_post p {
   right: 100px;
   bottom: 30px;
   margin: 0;
-  font-size: 20px;
+  font-size: 15px;
   z-index: 2;
   font-weight: bold;
   text-shadow: 0 0 2px #000, 0 0 1px #000, 0 0 1px #000;
@@ -967,10 +967,12 @@ div.contents.row div.content_post p {
 
 div.contents.row div.content_post span.name {
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  left: 30px;
+  top: 30px;
   z-index: 2;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }
 
 div.contents.row div.content_post span.name a {
