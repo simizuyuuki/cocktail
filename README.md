@@ -1,24 +1,9 @@
-# README
+アプリケーション名 
+cocktail_tweet
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+アプリケーション概要 
+サインアップしログインしている投稿者アのユーザーがカクテル画像を投稿し投稿した画像に対してログインしている第三者がコメントできるアプリ
 
-Things you may want to cover:
+URL
+https://cocktail-08lv.onrender.com
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
