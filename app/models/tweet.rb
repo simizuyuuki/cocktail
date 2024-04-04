@@ -10,4 +10,5 @@ class Tweet < ApplicationRecord
     end
   end
   validates :name, :image,:text, presence: true 
+  validates :text, length: { maximum: 168 }
 end
