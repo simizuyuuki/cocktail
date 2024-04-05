@@ -8,11 +8,16 @@ cocktail_tweet
 https://cocktail-08lv.onrender.com
 
 # テスト用アカウント
-・Basic認証パスワード : 2222  
+・Basic認証パスワード : 2222
+
 ・Basic認証ID : admin
+
 ・メールアドレス : test@gmail.com
+
 ・パスワード : test1111 
+
 ・メールアドレス : test@ezweb.com
+
 ・パスワード : test1111
 
 # 利用方法
