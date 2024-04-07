@@ -83,7 +83,7 @@ https://cocktail-08lv.onrender.com
 |----------|--------|-------------|
 | user_id     | string | null: false |
 | tweet_id    | string | null: false |
-| text  | test |  |
+| text  | text |  |
 
 ### Association
 
@@ -93,11 +93,17 @@ https://cocktail-08lv.onrender.com
 # 画面遷移図
 
 一覧ページ <--> ユーザーログインページ 
+
 一覧ページ <--> ユーザー新規登録ページ
+
 一覧ページ <--> ユーザーマイページ
+
 一覧ページ <--> 投稿ページ
+
 一覧ページ <--> 詳細ページ --> コメント投稿ページ
+
 一覧ページ <--> 編集ページ
+
 一覧ページ <--> 削除ページ
 
 # 工夫したポイント
