@@ -34,8 +34,8 @@ https://cocktail-08lv.onrender.com
 自身がカクテルを作ったり、お酒を販売したりする職業に従事していた為、お洒落なカクテルの投稿サイトを作成すれば、カクテルづくりに興味のある方が当アプリを利用すればカクテルづくりの参考になり、カクテルづくりが趣味というカテゴリーが作れると思った為。
 
 # 実装した機能
-ユーザー登録機能  [![Image from Gyazo](https://i.gyazo.com/f0dad9e3fd053fe00bc8b437acce40f1.gif)](https://gyazo.com/f0dad9e3fd053fe00bc8b437acce40f1)
+ユーザー登録機能  
+(https://gyazo.com/be2bc60d3cdf1eb70f6fbc34596cc32f)
+プレビュー機能を実装した投稿投稿機能 
 
-プレビュー機能を実装した投稿投稿機能  [![Image from Gyazo](https://i.gyazo.com/5e96669867662271648ef7ef4ca10efb.gif)](https://gyazo.com/5e96669867662271648ef7ef4ca10efb)
-
-コメント投稿機能  [![Image from Gyazo](https://i.gyazo.com/cdfda49b0777c990d8ac833ba989983d.gif)](https://gyazo.com/cdfda49b0777c990d8ac833ba989983d)  [![Image from Gyazo](https://i.gyazo.com/2ee5dacd4fd033039740244fad89f5f1.gif)](https://gyazo.com/2ee5dacd4fd033039740244fad89f5f1)
+コメント投稿機能  
