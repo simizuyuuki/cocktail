@@ -89,3 +89,7 @@ https://cocktail-08lv.onrender.com
 
 - belongs_to :user
 - belongs_to :tweet
+
+# 画面遷移図
+
+Page1  <--> Page2 <-->Page3
