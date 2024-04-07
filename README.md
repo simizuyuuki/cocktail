@@ -36,6 +36,56 @@ https://cocktail-08lv.onrender.com
 # 実装した機能
 ユーザー登録機能  
 (https://gyazo.com/be2bc60d3cdf1eb70f6fbc34596cc32f)
+
 プレビュー機能を実装した投稿投稿機能 
+(https://gyazo.com/180ea833a16320fb687be3f3325e5f64)
 
 コメント投稿機能  
+(https://gyazo.com/352e7d11e1e9dc8a1bcd23a70ed24a12)
+
+マイページ機能
+(https://gyazo.com/224b01e6d0edbba6fa0572bd731defbb)
+
+# 実装予定の機能
+1. いいね機能の実装
+
+# データベース設計
+
+## users Tabel
+
+|  Column  |  Type  |   Options   |
+|----------|--------|-------------|
+| nickname | string | null: false |
+| email    | string | null: false |
+| encrypted_password | string | null: false |
+
+### Association
+
+- has_many :tweet
+- has_many :comment
+
+## tweets Tabel
+
+|  Column  |  Type  |   Options   |
+|----------|--------|-------------|
+| name     | string | null: false |
+| text     | text   | null: false |
+| user_id  | integer | null: false |
+
+### Association
+
+- belongs_to :user
+- has_many :comments
+
+## comments Tabel
+
+|  Column  |  Type  |   Options   |
+|----------|--------|-------------|
+| user_id     | string | null: false |
+| tweet_id    | string | null: false |
+| text  | test |  |
+
+### Association
+
+- belongs_to :user
+- belongs_to :tweet
