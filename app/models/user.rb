@@ -7,4 +7,5 @@ class User < ApplicationRecord
          validates :nickname, presence: true, length: { maximum: 12 }
          has_many :tweets
          has_one_attached :image
+         has_many :likes
 end

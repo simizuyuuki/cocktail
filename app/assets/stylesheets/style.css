@@ -1091,3 +1091,10 @@ footer p {
 .search-form .search-btn {
   width: 10%;
 }
+
+.tweet_likes {
+  position: relative;
+  top: 280px;
+  left: 10px;
+  color: deeppink
+}
