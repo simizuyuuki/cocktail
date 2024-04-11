@@ -34,74 +34,21 @@ https://cocktail-08lv.onrender.com
 自身がカクテルを作成していた経験や、お酒を販売する職業に従事していた為、お洒落なカクテルの投稿サイトを作成すれば、カクテル作りに興味のある方の参考になると考えたため。また、カクテル作りという趣味を広めたいと考えたため。
 
 # 実装した機能
-ユーザー登録機能  
-(https://gyazo.com/be2bc60d3cdf1eb70f6fbc34596cc32f)
+ユーザー登録機能 (https://gyazo.com/be2bc60d3cdf1eb70f6fbc34596cc32f)
 
-プレビュー機能を実装した投稿投稿機能 
-(https://gyazo.com/180ea833a16320fb687be3f3325e5f64)
+プレビュー機能を実装した投稿投稿機能 (https://gyazo.com/180ea833a16320fb687be3f3325e5f64)
 
-コメント投稿機能  
-(https://gyazo.com/352e7d11e1e9dc8a1bcd23a70ed24a12)
+コメント投稿機能 (https://gyazo.com/352e7d11e1e9dc8a1bcd23a70ed24a12)
 
-マイページ機能
-(https://gyazo.com/224b01e6d0edbba6fa0572bd731defbb)
+マイページ機能(https://gyazo.com/224b01e6d0edbba6fa0572bd731defbb)
 
 # データベース設計
 
-## users Tabel
-
-|  Column  |  Type  |   Options   |
-|----------|--------|-------------|
-| nickname | string | null: false |
-| email    | string | null: false |
-| encrypted_password | string | null: false |
-
-### Association
-
-- has_many :tweet
-- has_many :comment
-
-## tweets Tabel
-
-|  Column  |  Type  |   Options   |
-|----------|--------|-------------|
-| name     | string | null: false |
-| text     | text   | null: false |
-| user_id  | integer | null: false |
-
-### Association
-
-- belongs_to :user
-- has_many :comments
-
-## comments Tabel
-
-|  Column  |  Type  |   Options   |
-|----------|--------|-------------|
-| user_id     | string | null: false |
-| tweet_id    | string | null: false |
-| text  | text |  |
-
-### Association
-
-- belongs_to :user
-- belongs_to :tweet
+# [![Image from Gyazo](https://i.gyazo.com/ecae7bc7f1f33a8cb307cff3cac29545.png)](https://gyazo.com/ecae7bc7f1f33a8cb307cff3cac29545)
 
 # 画面遷移図
 
-一覧ページ <--> ユーザーログインページ 
-
-一覧ページ <--> ユーザー新規登録ページ
-
-一覧ページ <--> ユーザーマイページ
-
-一覧ページ <--> 投稿ページ
-
-一覧ページ <--> 詳細ページ --> コメント投稿ページ
-
-一覧ページ <--> 編集ページ
-
-一覧ページ <--> 削除ページ
+# [![Image from Gyazo](https://i.gyazo.com/c8f05c0f4841c791f59931693c158844.png)](https://gyazo.com/c8f05c0f4841c791f59931693c158844)
 
 # 工夫したポイント
 
@@ -109,7 +56,11 @@ Java Scriptを使いプレビュー機能を実装させ投稿をしやすくい
 
 # 開発環境
 ・ フロントエンド
+
 ・ バックエンド
+
 ・ インフラ
+
 ・ テスト
+
 ・ テキストエディタ
