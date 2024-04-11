@@ -44,7 +44,7 @@ https://cocktail-08lv.onrender.com
 
 # データベース設計
 
-# [![Image from Gyazo](https://i.gyazo.com/ecae7bc7f1f33a8cb307cff3cac29545.png)](https://gyazo.com/ecae7bc7f1f33a8cb307cff3cac29545)
+# [![Image from Gyazo](https://i.gyazo.com/724bfef2660c2b0094240e64f6eb726e.png)](https://gyazo.com/724bfef2660c2b0094240e64f6eb726e)
 
 # 画面遷移図
 
