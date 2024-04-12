@@ -55,7 +55,7 @@ https://cocktail-08lv.onrender.com
 Java Scriptを使いプレビュー機能を実装させ投稿をしやすくいたしました。
 
 # 開発環境
-・ フロントエンド
+フロントエンド
 
 ・HTML
 
@@ -63,13 +63,13 @@ Java Scriptを使いプレビュー機能を実装させ投稿をしやすくい
 
 ・JavaScript
 
-・ バックエンド
-
+ バックエンド
+ 
 ・Ruby
 
 ・Ruby on Rails
 
-・ インフラ
+インフラ
 
 ・render
 
