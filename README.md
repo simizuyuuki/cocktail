@@ -57,10 +57,19 @@ Java Scriptを使いプレビュー機能を実装させ投稿をしやすくい
 # 開発環境
 ・ フロントエンド
 
+・HTML
+
+・CSS
+
+・JavaScript
+
 ・ バックエンド
+
+・Ruby
+
+・Ruby on Rails
 
 ・ インフラ
 
-・ テスト
+・render
 
-・ テキストエディタ
